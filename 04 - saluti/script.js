@@ -4,11 +4,11 @@ const nome = "Filippo";
 
 // Dichiara la funzione qui.
 function saluto(stringa) {
-    return console.log("Ciao" + " " + stringa);
+    return "Ciao" + " " + stringa;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-saluto(nome)
+console.log(saluto(nome));
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
