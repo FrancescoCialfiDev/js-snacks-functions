@@ -1,26 +1,27 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
-const word = 'javascript';
+// Funzione che calcola numero totale di vocali in una parola
+vocaliTotali()
+function vocaliTotali() {
+    const word = prompt("Inserisci una frase").toLowerCase();
 
-// Dichiara la funzione qui.
-function numeroVocali(stringa) {
-    const vocali = ["a", "e", "i", "o", "u"];
-    let somma = 0;
+    // Dichiara la funzione qui.
+    function numeroVocali(stringa) {
+        const vocali = ["a", "e", "i", "o", "u"];
+        let somma = 0;
 
-    for (let i = 0; i < stringa.length; i++) {
-        if (vocali.includes(stringa[i])) {
-            somma++;
+        for (let i = 0; i < stringa.length; i++) {
+            if (vocali.includes(stringa[i])) {
+                somma++;
+            }
         }
+        return somma;
     }
-    return somma;
 
-
+    // Invoca la funzione qui e stampa il risultato in console
+    let totaleVocali = numeroVocali(word)
+    console.log(totaleVocali);
 }
-
-// Invoca la funzione qui e stampa il risultato in console
-let totaleVocali = numeroVocali(word)
-console.log(totaleVocali);
-
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
 
